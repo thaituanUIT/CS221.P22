@@ -151,7 +151,7 @@ class SkipGram:
                     final_embeddings, 
                     reverse_dictionary):
         
-        f = open(self.modelpath, 'w+')
+        f = open(self.model_path, 'w+')
         for index, item in enumerate(final_embeddings):
             f.write(reverse_dictionary[index] + '\t' + ','.join([str(vec) for vec in item]) + '\n')
         f.close()
