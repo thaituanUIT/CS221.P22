@@ -81,8 +81,7 @@ def load_data_and_labels(path):
     df = pd.DataFrame(data=data, columns=["sentence", "sentiment"])
 
     # Mapping sentiment to integers
-    class2label = {'pos': 0, 'neg': 1, 'neu': 2}
-    df['label'] = [class2label[sent] for sent in df['sentiment']]
+    df['label'] = [utils.class2label[s] for s in df['sentiment']]
 
     # Text Data
     x_text = df['sentence'].tolist()
