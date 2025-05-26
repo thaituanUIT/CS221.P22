@@ -10,14 +10,7 @@ from config.configure import FLAGS
 def clean_str(text):
     text = text.lower()
     # Clean the text
-    
-    """
-    Cleans the input text by performing various substitutions and removing extra whitespace.
-    --> Your task is to complete the full text cleaning process.
-    Returns:
-        str: The cleaned text.
-    """
-    
+
     text = re.sub(r"[^A-Za-z0-9^,!.\/'+-=]", " ", text)
     text = re.sub(r"what's", "what is ", text)
     text = re.sub(r"that's", "that is ", text)
