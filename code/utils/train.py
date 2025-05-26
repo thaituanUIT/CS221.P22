@@ -14,6 +14,7 @@ import warnings
 import sklearn.exceptions
 warnings.filterwarnings("ignore", category=sklearn.exceptions.UndefinedMetricWarning)
 
+from sklearn.metrics import classification_report
 
 def train():
     with tf.device('/cpu:0'):
@@ -145,7 +146,10 @@ def train():
                     time_str = datetime.datetime.now().isoformat()
                     f1 = f1_score(np.argmax(y_dev, axis=1), predictions, average="macro")
                     print("{}: step {}, loss {:g}, acc {:g}".format(time_str, step, loss, accuracy))
-                    print("[UNOFFICIAL] (2*9+1)-Way Macro-Average F1 Score (excluding Other): {:g}\n".format(f1))
+                    print("Macro F1 Score: {:g}".format(f1))
+                    
+                    y_true = np.argmax(y_dev, axis=1)
+                    print("Classification Report:\n", classification_report(y_true, predictions, target_names=["Negative", "Neutral", "Positive"]))
 
                     # Model checkpoint
                     if best_f1 < f1:

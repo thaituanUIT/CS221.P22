@@ -132,7 +132,7 @@ def batch_iter(data, batch_size, num_epochs, shuffle=True):
 
 
 if __name__ == "__main__":
-    trainFile = 'SemEval2010_task8_all_data/SemEval2010_task8_training/TRAIN_FILE.TXT'
-    testFile = 'SemEval2010_task8_all_data/SemEval2010_task8_testing_keys/TEST_FILE_FULL.TXT'
+    trainFile = 'trainFile path here'
+    testFile = 'testFile path Here'
 
     load_data_and_labels(testFile)
