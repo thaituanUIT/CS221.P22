@@ -1,4 +1,3 @@
-=== 
 Đồ án môn học: Xử lý ngôn ngữ tự nhiên (CS221.P22)
 ===
 
