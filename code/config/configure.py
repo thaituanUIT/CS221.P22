@@ -9,9 +9,9 @@ def parse_args():
     parser = argparse.ArgumentParser()
 
     # Data loading params
-    parser.add_argument("--train_path", default="SemEval2010_task8_all_data/SemEval2010_task8_training/TRAIN_FILE.TXT",
+    parser.add_argument("--train_path", default="",
                         type=str, help="Path of train data")
-    parser.add_argument("--test_path", default="SemEval2010_task8_all_data/SemEval2010_task8_testing_keys/TEST_FILE_FULL.TXT",
+    parser.add_argument("--test_path", default="",
                         type=str, help="Path of test data")
     parser.add_argument("--max_sentence_length", default=90,
                         type=int, help="Max sentence length in data")

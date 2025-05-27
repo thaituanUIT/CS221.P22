@@ -124,7 +124,7 @@ def batch_iter(data, batch_size, num_epochs, shuffle=True):
 
 
 if __name__ == "__main__":
-    trainFile = 'trainFile path here'
-    testFile = 'testFile path Here'
+    trainFile = ''
+    testFile = ''
 
     load_data_and_labels(testFile)
