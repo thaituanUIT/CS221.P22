@@ -2,15 +2,17 @@ import numpy as np
 
 
 class2label = {
-    'positive': 0,
-    'negative': 1,
-    'neutral': 2
+    'positive': 2,
+    'neutral': 1,
+    'negative': 0
+    
 }
 
 label2class = {
-    0: 'positive',
-    1: 'negative',
-    2: 'neutral'
+    2: 'positive',
+    1: 'neutral',
+    0: 'negative'
+    
 }
 
 
