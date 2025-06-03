@@ -7,8 +7,8 @@ import time
 from models.att_lstm import AttLSTM
 from models.lstm import LSTM
 from data import data_helpers
-import utils
-from config.configure import FLAGS
+import models.utils as utils
+from models.config.configure import FLAGS
 
 from sklearn.metrics import f1_score
 import warnings
