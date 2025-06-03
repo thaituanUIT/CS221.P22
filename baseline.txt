@@ -1,0 +1,41 @@
+pdf
+presentation in 15 minutes
+
+I Abstract
+II Embedding 
+1. Introduction
+2. Embedding
+2.1 Skip-gram
+-- Main idea
+2.2 CBOW
+-- Main idea
+3. Train (Wiki)
+4. Evaluate
+-- Evaluate Dataset
+Google Analogy Test Set (king man queen woman)
+wordsim353 (word similarity 2.332) 
+-------------- CBOW || Skip || Gensim (Word2Vec, fastText)
+-- Spearman
+-- Pearson
+III. Sentiment Analysis
+1. Introduction ( 1 slide)
+2. Dataset			\
+2.1 Overview			\ 1 slide total
+2.2. Preprocess		\
+3. Train
+3.1 Traditional (MNaiveBayes) sklearn
+3.2 Simple RNN
+4. Evaluation
+
+4.1 Traditional
+			CBOW || Skip-gram || Gensim Embedding
+F1
+Acc
+Precision
+....
+
+4.2 RNN 
+			CBOW || Skip-gram || Gensim Embedding
+F1
+Acc
+Precision
